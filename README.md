@@ -1,9 +1,11 @@
 # Desafio Técnico Flutter – Plataforma de Descoberta de Personais
 
 Projeto desenvolvido como parte do desafio técnico para a vaga de Desenvolvedor Flutter. O objetivo foi construir um aplicativo para buscar, visualizar e simular a contratação de personais trainers, consumindo dados de uma API REST mockada.
-
 <br>
-
+<p align="center">
+  <img src="assets/demo.gif" alt="Demonstração do App" width="300"/>
+</p>
+<br>
 ## ✨ Features
 
 -   **Listagem de Personais:** Visualização de todos os profissionais disponíveis com suas informações principais.
