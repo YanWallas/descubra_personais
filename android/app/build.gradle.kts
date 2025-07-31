@@ -8,7 +8,8 @@ plugins {
 android {
     namespace = "com.example.descubra_personais"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // A alteração feita aqui para resolver o aviso do plugin
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
