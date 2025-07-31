@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Amanda Costa",
-      "bio": "Especialista em emagrecimento feminino.",
+      "bio": "Especialista em emagrecimento feminino e reeducação alimentar.",
       "specialties": ["Emagrecimento", "Funcional"],
       "rating": 4.8,
       "city": "Goiânia",
@@ -15,7 +15,7 @@
     {
       "id": "2",
       "name": "Carlos Eduardo",
-      "bio": "Focado em hipertrofia masculina e treinos intensivos.",
+      "bio": "Focado em hipertrofia masculina e treinos intensivos de força.",
       "specialties": ["Hipertrofia", "Musculação"],
       "rating": 4.6,
       "city": "São Paulo",
@@ -27,7 +27,7 @@
     {
       "id": "3",
       "name": "Juliana Ferreira",
-      "bio": "Atendimento online e personalizado para mulheres.",
+      "bio": "Atendimento online e personalizado para mulheres que buscam saúde.",
       "specialties": ["Treinamento Online", "Funcional", "Emagrecimento"],
       "rating": 4.9,
       "city": "Belo Horizonte",
@@ -35,6 +35,115 @@
       "photoUrl": "https://randomuser.me/api/portraits/women/3.jpg",
       "whatsapp": "31991234567",
       "price": 90
+    },
+    {
+      "id": "4",
+      "name": "Ricardo Alves",
+      "bio": "Coach de Crossfit e levantamento de peso olímpico. Performance é a chave.",
+      "specialties": ["Crossfit", "Hipertrofia"],
+      "rating": 4.7,
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "photoUrl": "https://randomuser.me/api/portraits/men/4.jpg",
+      "whatsapp": "21987651234",
+      "price": 130
+    },
+    {
+      "id": "5",
+      "name": "Beatriz Lima",
+      "bio": "Instrutora de Pilates e Yoga, focada em bem-estar e equilíbrio corpo-mente.",
+      "specialties": ["Pilates", "Yoga", "Reabilitação"],
+      "rating": 5.0,
+      "city": "Curitiba",
+      "state": "PR",
+      "photoUrl": "https://randomuser.me/api/portraits/women/5.jpg",
+      "whatsapp": "41996543210",
+      "price": 110
+    },
+    {
+      "id": "6",
+      "name": "Felipe Mendes",
+      "bio": "Preparador físico para atletas e concursos públicos (TAF).",
+      "specialties": ["Preparação para Concursos", "Funcional"],
+      "rating": 4.8,
+      "city": "Brasília",
+      "state": "DF",
+      "photoUrl": "https://randomuser.me/api/portraits/men/6.jpg",
+      "whatsapp": "61981234567",
+      "price": 150
+    },
+    {
+      "id": "7",
+      "name": "Luana Martins",
+      "bio": "Personal trainer especializada no atendimento à terceira idade.",
+      "specialties": ["Terceira Idade", "Reabilitação"],
+      "rating": 4.9,
+      "city": "Salvador",
+      "state": "BA",
+      "photoUrl": "https://randomuser.me/api/portraits/women/7.jpg",
+      "whatsapp": "71999887766",
+      "price": 80
+    },
+    {
+      "id": "8",
+      "name": "Bruno Gomes",
+      "bio": "Foco em musculação tradicional para ganho de massa e definição.",
+      "specialties": ["Musculação", "Hipertrofia"],
+      "rating": 4.5,
+      "city": "Porto Alegre",
+      "state": "RS",
+      "photoUrl": "https://randomuser.me/api/portraits/men/8.jpg",
+      "whatsapp": "51995554433",
+      "price": 100
+    },
+    {
+      "id": "9",
+      "name": "Gabriela Rocha",
+      "bio": "Treinamento funcional na praia e acompanhamento de corrida.",
+      "specialties": ["Funcional", "Emagrecimento", "Treinamento Online"],
+      "rating": 4.7,
+      "city": "Fortaleza",
+      "state": "CE",
+      "photoUrl": "https://randomuser.me/api/portraits/women/9.jpg",
+      "whatsapp": "85994443322",
+      "price": 95
+    },
+    {
+      "id": "10",
+      "name": "Thiago Barbosa",
+      "bio": "Especialista em reabilitação de lesões esportivas e fortalecimento.",
+      "specialties": ["Reabilitação", "Musculação"],
+      "rating": 4.9,
+      "city": "Recife",
+      "state": "PE",
+      "photoUrl": "https://randomuser.me/api/portraits/men/10.jpg",
+      "whatsapp": "81993332211",
+      "price": 140
+    },
+    {
+      "id": "11",
+      "name": "Patrícia Nunes",
+      "bio": "Aulas de Yoga e meditação online para grupos e individual.",
+      "specialties": ["Yoga", "Treinamento Online"],
+      "rating": 4.8,
+      "city": "São Paulo",
+      "state": "SP",
+      "photoUrl": "https://randomuser.me/api/portraits/women/11.jpg",
+      "whatsapp": "11992221100",
+      "price": 85
+    },
+    {
+      "id": "12",
+      "name": "Rafael Oliveira",
+      "bio": "Consultoria esportiva e planos de treino para musculação e funcional.",
+      "specialties": ["Musculação", "Funcional", "Hipertrofia"],
+      "rating": 4.6,
+      "city": "Goiânia",
+      "state": "GO",
+      "photoUrl": "https://randomuser.me/api/portraits/men/12.jpg",
+      "whatsapp": "62981112233",
+      "price": 115
     }
-  ]
+  ],
+  "contact-interest": []
 }

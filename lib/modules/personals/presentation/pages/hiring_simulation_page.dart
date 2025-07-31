@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 
-import '../../data/datasources/personal_remote_datasource.dart';
-import '../../data/repositories/personal_repository_impl.dart';
 import '../../domain/entities/personal_entity.dart';
-import '../../domain/repositories/personal_repository.dart';
 
 class HiringSimulationPage extends StatefulWidget {
   final PersonalEntity personal;
@@ -38,51 +36,39 @@ class _HiringSimulationPageState extends State<HiringSimulationPage> {
     }
   }
 
+  // Simular função de envio de interesse
   Future<void> _submitInterest() async {
     if (!_formKey.currentState!.validate()) return;
 
     setState(() => _isLoading = true);
 
-    final PersonalRepository repository = PersonalRepositoryImpl(datasource: PersonalRemoteDatasource());
+    // SIMULAÇÃO: Espera 2 segundos para parecer uma chamada de rede
+    await Future.delayed(const Duration(seconds: 2));
 
-    final success = await repository.sendContactInterest(
-      personalId: widget.personal.id,
-      modality: _selectedModality!,
-      frequency: _selectedFrequency!,
-      estimatedPrice: _estimatedPrice,
-    );
-
-    setState(() => _isLoading = false);
+    // Desativa o loading (verificando se a tela ainda existe)
     if (!mounted) return;
+    setState(() => _isLoading = false);
 
-    if (success) {
-      showDialog(
-        context: context,
-        barrierDismissible: false,
-        builder: (_) => AlertDialog(
-          title: const Text('🎉 Interesse Enviado!'),
-          content: Text(
-            'Seu interesse em contratar ${widget.personal.name} foi registrado. Em breve ele(a) entrará em contato.',
+    // Mostra a mensagem ficticia de sucesso
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (_) => AlertDialog(
+        title: const Text('🎉 Interesse Enviado!'),
+        content: Text(
+          'Seu interesse em contratar ${widget.personal.name} foi registrado com sucesso. Em breve ele(a) entrará em contato.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).pop();
+            },
+            child: const Text('Ótimo!'),
           ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).pop();
-              },
-              child: const Text('Ótimo!'),
-            ),
-          ],
-        ),
-      );
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          backgroundColor: Colors.redAccent,
-          content: Text('Erro ao enviar interesse. Tente novamente.'),
-        ),
-      );
-    }
+        ],
+      ),
+    );
   }
 
   @override
